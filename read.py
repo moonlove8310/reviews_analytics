@@ -19,3 +19,9 @@ for d in data:
     if len(d) < 100:
         new.append(d)
 print('there are', len(new), 'messages their lenghts are less than 100')
+
+good =[]
+for d in data:
+    if 'good' in d:
+        good.append(d)
+print('there are', len(good), 'messages including the word "good"')
