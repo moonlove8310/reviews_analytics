@@ -12,4 +12,10 @@ sum_len = 0
 for d in data:
     sum_len = sum_len + len(d)
 
-print('the average lenght of the messages are', sum_len/len(data))
+print('the average lenghts of the messages are', sum_len/len(data))
+
+new =[]
+for d in data:
+    if len(d) < 100:
+        new.append(d)
+print('there are', len(new), 'messages their lenghts are less than 100')
